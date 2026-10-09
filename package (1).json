@@ -1,0 +1,7 @@
+{
+  "name": "momo-ticket-bot",
+  "private": true,
+  "type": "module",
+  "scripts": { "start": "node index.js" },
+  "dependencies": { "discord.js": "^14.16.3" }
+}

@@ -1,0 +1,47 @@
+{
+  "name": "momo-mc",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite dev --port 3000",
+    "build": "vite build",
+    "start": "node .output/server/index.mjs",
+    "db:setup": "node scripts/setup-db.mjs"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.2.2",
+    "@tanstack/react-router": "latest",
+    "@tanstack/react-start": "latest",
+    "@tanstack/router-plugin": "latest",
+    "drizzle-orm": "1.0.0-beta.22",
+    "highlight.js": "11.11.1",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "tailwindcss": "4.2.2",
+    "vite-tsconfig-paths": "6.1.1",
+    "zod": "4.3.6",
+    "pg": "^8.13.0",
+    "nitro": "latest",
+    "lucide-react": "0.576.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "4.2.2",
+    "@types/node": "22.20.1",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "@vitejs/plugin-react": "5.2.0",
+    "drizzle-kit": "1.0.0-beta.22",
+    "lucide-react": "0.576.0",
+    "rimraf": "6.1.3",
+    "tailwindcss": "4.2.2",
+    "typescript": "5.9.3",
+    "vite": "7.3.6",
+    "@types/pg": "^8.11.0"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "overrides": {
+    "@tanstack/start-server-core": ">=1.169.39"
+  }
+}

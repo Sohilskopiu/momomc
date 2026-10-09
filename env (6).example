@@ -1,0 +1,34 @@
+# ---- REQUIRED ----
+# Postgres connection string (Neon / Vercel Postgres, use the POOLED url)
+DATABASE_URL=
+# Discord login (Developer Portal > OAuth2 > Client Secret)
+DISCORD_CLIENT_SECRET=
+# Your final website address, no trailing slash
+SITE_URL=https://your-site.vercel.app
+# Long random string (16+ chars). Must be identical in the bot's .env
+BOT_API_KEY=
+# Bot token used to create tickets / sync announcements
+DISCORD_BOT_TOKEN=
+
+# ---- RECOMMENDED ----
+# Long random string (16+ chars) so the daily cron route is protected
+CRON_SECRET=
+
+# ---- OPTIONAL ----
+DISCORD_CLIENT_ID=1519990400574689430
+ADMIN_SESSION_SECRET=
+# Only to reset a lost admin password: set ADMIN_FORCE_ENV=true + the two below, redeploy, login, change in panel, then remove them
+ADMIN_FORCE_ENV=
+ADMIN_USERNAME=
+ADMIN_PASSWORD=
+# Fallbacks (normally set inside Admin Panel > Game Modes)
+DISCORD_GUILD_ID=
+
+# ---- ADMIN LOGIN APPROVAL (Discord channel) ----
+# The bot (DISCORD_BOT_TOKEN above) posts an Approve / Deny link in this channel and pings the approvers. KEEP THE CHANNEL PRIVATE.
+# Default: 1557784605833171084
+ADMIN_APPROVAL_CHANNEL_ID=
+# Who gets pinged. Editable in Admin Panel > Security. Default: 896582112487043082, 1373581087506301003
+ADMIN_APPROVER_DISCORD_IDS=
+# Emergency only: set to off to skip the approval step
+ADMIN_APPROVAL=
